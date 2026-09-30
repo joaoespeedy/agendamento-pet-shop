@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="agendamento pet shop.js">
+    <link rel="stylesheet" href="agendamento pet shop.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pet Shop - Agendamentos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🐾 Pet Shop</h1>
+        <p>Agendamento de serviços</p>
+    </header>
+
+    <main class="container">
+
+        <section class="formulario">
+            <h2>Novo agendamento</h2>
+
+            <form id="formAgendamento">
+
+                <label for="pet">
+                    Nome do pet
+                </label>
+
+                <input
+                    type="text"
+                    id="pet"
+                    placeholder="Ex.: Thor"
+                    required
+                >
+
+                <label for="tutor">
+                    Nome do tutor
+                </label>
+
+                <input
+                    type="text"
+                    id="tutor"
+                    placeholder="Ex.: João"
+                    required
+                >
+
+                <label for="data">
+                    Data
+                </label>
+
+                <input
+                    type="date"
+                    id="data"
+                    required
+                >
+
+                <label for="horario">
+                    Horário
+                </label>
+
+                <input
+                    type="time"
+                    id="horario"
+                    required
+                >
+
+                <label for="servico">
+                    Serviço
+                </label>
+
+                <select id="servico" required>
+                    <option value="">Selecione um serviço</option>
+                    <option value="Banho">Banho</option>
+                    <option value="Tosa">Tosa</option>
+                    <option value="Banho e Tosa">Banho e Tosa</option>
+                    <option value="Consulta">Consulta</option>
+                    <option value="Higiene">Higiene</option>
+                </select>
+
+                <button type="submit">
+                    Adicionar agendamento
+                </button>
+
+            </form>
+
+            <p id="mensagem"></p>
+        </section>
+
+
+        <section class="agenda">
+
+            <h2>📅 Minha agenda</h2>
+
+            <div id="listaAgendamentos">
+
+                <p class="vazio">
+                    Nenhum agendamento cadastrado.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🐾 Pet Shop &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
